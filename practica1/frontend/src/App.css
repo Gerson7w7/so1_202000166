@@ -10,11 +10,8 @@ h1 {
 .btn {
   margin: 20px;
   padding: 20px;
+  padding-left: 50px;
   background-color: white;
-}
-.form-control {
-  padding-left: 150px;
-  padding-right: 150px;
 }
 .base-top {
   padding-top: 30px;

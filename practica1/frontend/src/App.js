@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Calc />} />
-        <Route path='/errores' element={<Log />} />
+        <Route path='/log' element={<Log />} />
       </Routes>
     </Router>
   );

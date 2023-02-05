@@ -1,0 +1,8 @@
+mkdir example 
+cd example
+go mod init hello 	# esto crea las dependencias de go
+touch hello.go 		# creamos un documenot de tipo .go para programar
+# programamos nuestro programa
+go run . 				# con este comando corremos el programa, en el directorio actual
+go build 			# compilamos y construimos el programa
+./hello 				# ejecutamos el binario! :D
