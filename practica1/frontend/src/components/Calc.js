@@ -3,44 +3,52 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 let outPut = '';
-let num1 = '', num2 = '', signo = '';
+let operacion = { num1: '', num2: '', signo: '' }
 
 const Calc = () => {
     const [res, setRes] = useState("");
     let navigate = useNavigate();
 
     const escribirNum = (num) => {
-        outPut += num;
-        setRes(outPut);
-        if (signo === '') {
-            num1 += num;
+        if (operacion.num1 === '') {
+            outPut = num;    
         } else {
-            num2 += num;
+            outPut += num;
+        }
+        setRes(outPut);
+        if (operacion.signo === '') {
+            operacion.num1 += num;
+        } else {
+            operacion.num2 += num;
         }
     }
 
     const escribirSig = (sig) => {
         outPut += sig;
         setRes(outPut);
-        signo = sig;
+        operacion.signo = sig;
     }
 
     const resultado = () => {
-        console.log(num1)
-        console.log(signo)
-        console.log(num2)
+        console.log(operacion.num1)
+        console.log(operacion.signo)
+        console.log(operacion.num2)
 
         const url = "http://localhost:5000/resultado";
         fetch(url, {
             method: "POST", // or 'PUT'
-            body: {'num1': num1, 'num2': num2, 'signo':signo}, // data can be `string` or {object}!
+            body: JSON.stringify(operacion), // data can be `string` or {object}!
             headers: {
               "Content-Type": "application/json",
             },
           })
             .then((res) => res.json())
             .catch((error) => console.error("Error:", error))
-            .then((res) => setRes(res.salida));
+            .then((res) => setRes(res.res));
+        // reseteamos valores
+        operacion.num1 = ''
+        operacion.num2 = ''
+        operacion.signo = ''
     }
 
     return (
