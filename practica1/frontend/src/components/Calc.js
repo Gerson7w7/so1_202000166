@@ -10,8 +10,8 @@ const Calc = () => {
     let navigate = useNavigate();
 
     const escribirNum = (num) => {
-        if (operacion.num1 === '') {
-            outPut = num;    
+        if (operacion.num1 === '' && operacion.signo === '') {
+            outPut = num;
         } else {
             outPut += num;
         }
