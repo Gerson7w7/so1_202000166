@@ -33,12 +33,13 @@ type Log struct {
 
 // función para la conexión a la bd
 func conexionBD() (conexion *sql.DB) {
-	Driver := "mysql"
+	Driver := "mysql" // driver de mysql
 	Usuario := "root"
-	Constrasenia := "1234"
-	Nombre := "sistema"
+	Constrasenia := "secret"
+	Nombre := "dbpractica1" // nombre de la database
+	Port := "3306"
 
-	conexion, err := sql.Open(Driver, Usuario+":"+Constrasenia+"@tcp(127.0.0)/"+Nombre)
+	conexion, err := sql.Open(Driver, Usuario+":"+Constrasenia+"@tcp(127.0.0:"+Port+")/"+Nombre) // root:secret@tcp(127.0.0:3306)/dbpractica1
 	if err != nil {
 		panic(err.Error())
 	}
@@ -94,6 +95,8 @@ func main() {
 		}
 		fecha := time.Now()
 		insertarRegistro.Exec(op.Num1, op.Num2, op.Signo, strconv.Itoa(res), fecha.String(), strconv.Itoa(esError))
+		// cerramos conexión
+		conexionEstablecida.Close()
 
 		// regresando el resultado al front
 		w.Header().Set("Content-Type", "application/json")
@@ -126,6 +129,9 @@ func main() {
 			logs = append(logs, log)
 		}
 		fmt.Println(logs)
+		// cerramos conexión
+		conexionEstablecida.Close()
+
 		// regresando el resultado al front
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode(logs)
