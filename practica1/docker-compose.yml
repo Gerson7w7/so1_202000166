@@ -1,0 +1,44 @@
+version: '3' # versión de docker 
+
+services:
+  db:
+    container_name: dbpractica1c
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: dbpractica1
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+  backend:
+    container_name: backend 
+    restart: always 
+    build: ./backend/
+    image: gerson7w7/backend_practica1_202000166
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db # el servicio backend depende de bd 
+    links:
+      - db 
+
+  frontend:
+    container_name: frontend 
+    restart: always 
+    build: ./frontend/
+    image: gerson7w7/frontend_practica1_202000166
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend # el servicio backend depende de bd 
+    links:
+      - backend 
+
+volumes:
+  db_data:

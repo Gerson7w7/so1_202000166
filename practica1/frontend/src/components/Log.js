@@ -51,6 +51,10 @@ const Log = () => {
                                 Resultado 
                             </th>
                             <th className="table-active" scope="col">
+                                Es error <br/>
+                                0 = no, 1 = si 
+                            </th>
+                            <th className="table-dark" scope="col">
                                 Fecha y hora
                             </th>
                         </tr>
@@ -65,7 +69,8 @@ const Log = () => {
                             <td className="table-warning">{log.num2}</td>
                             <td className="table-success">{log.operacion}</td>
                             <td className="table-warning">{log.resultado}</td>
-                            <td className="table-success">{log.fecha}</td>
+                            <td className="table-success">{log.esError}</td>
+                            <td className="table-warning">{log.fecha}</td>
                         </tr>
                         ))}
                     </tbody>

@@ -23,6 +23,7 @@ type Resultado struct {
 }
 
 type Log struct {
+	Id        string `json:"id"`
 	Num1      string `json:"num1"`
 	Num2      string `json:"num2"`
 	Operacion string `json:"operacion"`
@@ -37,9 +38,9 @@ func conexionBD() (conexion *sql.DB) {
 	Usuario := "root"
 	Constrasenia := "secret"
 	Nombre := "dbpractica1" // nombre de la database
-	Port := "3306"
+	Port := "dbpractica1c"
 
-	conexion, err := sql.Open(Driver, Usuario+":"+Constrasenia+"@tcp(127.0.0:"+Port+")/"+Nombre) // root:secret@tcp(127.0.0:3306)/dbpractica1
+	conexion, err := sql.Open(Driver, Usuario+":"+Constrasenia+"@tcp("+Port+")/"+Nombre) // root:secret@tcp(127.0.0:3306)/dbpractica1
 	if err != nil {
 		panic(err.Error())
 	}
@@ -94,7 +95,7 @@ func main() {
 			panic(err2.Error())
 		}
 		fecha := time.Now()
-		insertarRegistro.Exec(op.Num1, op.Num2, op.Signo, strconv.Itoa(res), fecha.String(), strconv.Itoa(esError))
+		insertarRegistro.Exec(op.Num1, op.Num2, op.Signo, strconv.Itoa(res), fecha.Format("2006.01.02 15:04:05"), strconv.Itoa(esError))
 		// cerramos conexión
 		conexionEstablecida.Close()
 
@@ -114,11 +115,12 @@ func main() {
 		log := Log{}
 		logs := []Log{}
 		for registros.Next() {
-			var num1, num2, operacion, resultado, fecha, esError string
-			err = registros.Scan(&num1, &num2, &operacion, &resultado, &fecha, &esError)
+			var id, num1, num2, operacion, resultado, fecha, esError string
+			err = registros.Scan(&id, &num1, &num2, &operacion, &resultado, &fecha, &esError)
 			if err != nil {
 				panic(err.Error())
 			}
+			log.Id = id
 			log.Num1 = num1
 			log.Num2 = num2
 			log.Operacion = operacion
