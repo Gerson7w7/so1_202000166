@@ -17,3 +17,4 @@ cat /tmp/reportes.json | jq -r '.[] | .operacion' | sort | uniq -c
 fecha_actual=$(date +%Y.%m.%d)
 resultado=$(jq '. | map(select(.fecha | startswith("'"$fecha_actual"'"))) | length' /tmp/reportes.json)
 echo "La cantidad de elementos con la fecha actual es: $resultado"
+jq -r '.[] | select(.fecha | startswith("'"$fecha_actual"'"))' /tmp/reportes.json | while read -r line; do echo "$line"; done

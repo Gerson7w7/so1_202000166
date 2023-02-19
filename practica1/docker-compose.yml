@@ -40,5 +40,17 @@ services:
     links:
       - backend 
 
+  script:
+    container_name: script
+    build: ./script/
+    image: gerson7w7/script_practica1_202000166
+    restart: always
+    ports:
+      - "3030:3030"
+    depends_on:
+      - backend # el servicio backend depende de bd 
+    links:
+      - backend 
+
 volumes:
   db_data:
