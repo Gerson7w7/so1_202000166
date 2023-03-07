@@ -1,0 +1,38 @@
+struct task_struct *task;
+    struct task_struct *task_child;
+    struct list_head *list;
+    struct cred *cred;
+    struct user_struct *user;
+    char buf[TASK_COMM_LEN];
+    char *username;
+    unsigned long rss;
+    unsigned long utime;
+    unsigned long stime;
+    unsigned long long starttime;
+    unsigned long minutes, seconds;
+
+    seq_printf(archivo, "{\n");
+    seq_printf(archivo, "\"procesos\": [\n");
+
+    for_each_process(task)
+    {
+
+        seq_printf(archivo, "\t{\n");
+        seq_printf(archivo, "\t\t\"pid\": %d,\n", task->pid);
+        seq_printf(archivo, "\t\t\"nombre\": \"%s\",\n", get_task_comm(buf, task));
+        seq_printf(archivo, "\t\t\"usuario\": \"%s\",\n", username);
+        seq_printf(archivo, "\t\t\"rss\": %lu,\n", rss);
+        seq_printf(archivo, "\t\t\"utime\": %lu,\n", utime);
+        seq_printf(archivo, "\t\t\"stime\": %lu,\n", stime);
+        seq_printf(archivo, "\t\t\"tiempo_ejecucion\": \"%lu:%lu\",\n", minutes, seconds);
+        seq_printf(archivo, "\t\t\"hijos\": [\n");
+
+        list_for_each(list, &task->children)
+        {
+            task_child = list_entry(list, struct task_struct, sibling);
+            seq_printf(archivo, "\t\t\t{\n");
+            seq_printf(archivo, "\t\t\t\t\"pid\": %d,\n", task_child->pid);
+            seq_printf(archivo, "\t\t\t\t\"nombre\": \"%s\",\n", get_task_comm(buf, task_child));
+            seq_printf(archivo, "\t\t\t\t\"usuario\": \"%s\",\n", username);
+            seq_printf(archivo, "\t\t\t\t\"rss\": %lu,\n", get_mm_rss(task_child->mm) * PAGE_SIZE / 1024);
+            seq_printf(archivo, "\t\t\t\t\"utime\": %lu

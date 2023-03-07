@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "sysinfo.h": "c",
+        "kernel.h": "c",
+        "module.h": "c",
+        "types.h": "c",
+        "sched.h": "c",
+        "time.h": "c",
+        "ideas gg": "c",
+        "pwd.h": "c"
+    }
+}
