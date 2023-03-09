@@ -16,8 +16,8 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
     struct sysinfo ram;
     si_meminfo(&ram);
     seq_printf(archivo, "{");
-    seq_printf(archivo, "\n\"totalram\": %lu", ram.totalram);
-    seq_printf(archivo, "\n\"freeram\": %lu", ram.freeram);
+    seq_printf(archivo, "\n\"totalram\": %lu,", ram.totalram * ram.mem_unit);
+    seq_printf(archivo, "\n\"freeram\": %lu", ram.freeram * ram.mem_unit);
     seq_printf(archivo, "\n}\n");
     return 0;
 }

@@ -50,6 +50,8 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
     // ram utilizada
     unsigned long rss, total_size, total_ram;
     struct mm_struct *mm;
+    // bools para obtener el json de forma correcta
+    bool flag, flag2;
 
     // Obtener el uptime del sistema
     uptime = ktime_to_ms(ktime_get_boottime()) / 1000;
@@ -59,6 +61,7 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
     seq_printf(archivo, "{");
     seq_printf(archivo, "\n\"procesos\": [\n");
     // Calcular el tiempo de CPU utilizado por cada proceso y sumarlo
+    flag = false;
     for_each_process(task) {
         // Obtener el PID del proceso
         pid = task_pid(task);
@@ -81,15 +84,20 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
         }
 
         // escribimos en el archivo
+        if (flag)
+        {
+            seq_printf(archivo, ",");
+        }
+        flag = true;
         seq_printf(archivo, "\n\t{\"pid\": %d,", pid_num);
         seq_printf(archivo, "\n\t\"name\": \"%s\",", task->comm);
-        seq_printf(archivo, "\n\t\"uid\": \"%u\",", uid);
+        seq_printf(archivo, "\n\t\"uid\": %u,", uid);
         seq_printf(archivo, "\n\t\"ram_usada\": {"); // porcentaje = total_size * 100 / total_ram
-        seq_printf(archivo, "\n\t\t\"total_ram\": %lu", total_ram);
-        seq_printf(archivo, "\n\t\t\"total_size\": %lu", total_size);
+        seq_printf(archivo, "\n\t\t\"totalram\": %lu,", total_ram);
+        seq_printf(archivo, "\n\t\t\"freeram\": %lu", total_size);
         seq_printf(archivo, "\n\t\t},");
         // Verificar el estado del proceso
-        if (task->state == TASK_RUNNING) {
+        if (task->state == TASK_RUNNING || task->state == TASK_WAKEKILL) {
             // contamos los procesos que estan corriendo
             running_processes++;
             seq_printf(archivo, "\n\t\"estado\": \"corriendo\",");
@@ -105,17 +113,25 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
             // contamos los procesos que estan en modo zombie
             zombie_processes++;
             seq_printf(archivo, "\n\t\"estado\": \"zombie\",");
+        } else {
+            seq_printf(archivo, "\n\t\"estado\": \"wakekill\",");
         }
         // obteniendo hijos (si tuviera)
+        flag2 = false;
         seq_printf(archivo, "\n\t\"hijos\": [");
         list_for_each(list, &task->children)
         {
+            if (flag2)
+            {
+                seq_printf(archivo, ",");
+            }
+            flag2 = true;
             task_child = list_entry(list, struct task_struct, sibling);
             seq_printf(archivo, "\n\t\t{\"pid\": %d,", task_child->pid);
             seq_printf(archivo, "\n\t\t\"nombre\": \"%s\" }", task->comm);
         }
         seq_printf(archivo, "\n\t\t]");
-        seq_printf(archivo, "\n\t},");
+        seq_printf(archivo, "\n\t}");
     }
     seq_printf(archivo, "\n],");
     // Calcular el número de segundos desde el inicio del sistema
@@ -129,11 +145,11 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
     // procesos totales 
     total_processes = running_processes + sleeping_processes + stopped_processes + zombie_processes;
 
-    seq_printf(archivo, "\n\"cpu_usage\": %llu", cpu_usage); // dividir entre 1000000
+    seq_printf(archivo, "\n\"cpu_usage\": %llu,", cpu_usage); // dividir entre 1000000
     seq_printf(archivo, "\n\"running_processes\": %d,", running_processes);
     seq_printf(archivo, "\n\"sleeping_processes\": %d,", sleeping_processes);
     seq_printf(archivo, "\n\"stopped_processes\": %d,", stopped_processes);
-    seq_printf(archivo, "\n\"zombie_processes\": %d", zombie_processes);
+    seq_printf(archivo, "\n\"zombie_processes\": %d,", zombie_processes);
     seq_printf(archivo, "\n\"total_processes\": %d", total_processes);
     seq_printf(archivo, "\n}\n");
     return 0;
