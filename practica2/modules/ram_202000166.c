@@ -28,10 +28,10 @@ static int al_abrir(struct inode *inode, struct file *file)
     return single_open(file, escribir_archivo, NULL);
 }
 
-static const struct file_operations operaciones =
-    {
-        .open = al_abrir,
-        .read = seq_read,
+static struct proc_ops operaciones =
+{
+    .proc_open = al_abrir,
+    .proc_read = seq_read
 };
 
 static int _insert(void)

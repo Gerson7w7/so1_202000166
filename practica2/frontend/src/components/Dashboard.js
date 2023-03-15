@@ -1,25 +1,20 @@
 import React from "react";
-//import { useState } from "react";
-//import { useNavigate } from "react-router-dom";
+import Stats from "./Stats";
 
 const Dashboard = () => {
-    // const [res, setRes] = useState("");
-    // let navigate = useNavigate();
-
-    return (
-        <div className="main">
-            <div className="d-flex justify-content-around">
-                <h1>DASHBOARD</h1>
-            </div>
-            <div class="d-flex justify-content-evenly">
-                <div>CPU</div>
-                <div>RAM</div>
-            </div>
-            <div class="d-flex justify-content-evenly">
-                <div>PROCESOS</div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="main">
+      <br /><br />
+      <div className="d-flex justify-content-around">
+      <img alt="" className="logo" src="https://i.pinimg.com/originals/0b/92/c1/0b92c1ba5ae239c314ba2ec1dab936ec.png"/>
+      </div>
+      <div className="d-flex justify-content-around">
+        <h1>DASHBOARD</h1>
+      </div>
+      <br /><br /><br /><br />
+        <Stats />
+    </div>
+  );
 };
 
 export default Dashboard;

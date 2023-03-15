@@ -97,19 +97,19 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
         seq_printf(archivo, "\n\t\t\"freeram\": %lu", total_size);
         seq_printf(archivo, "\n\t\t},");
         // Verificar el estado del proceso
-        if (task->state == TASK_RUNNING || task->state == TASK_WAKEKILL) {
+        if (task->__state == TASK_RUNNING || task->__state == TASK_WAKEKILL) {
             // contamos los procesos que estan corriendo
             running_processes++;
             seq_printf(archivo, "\n\t\"estado\": \"corriendo\",");
-        } else if (task->state == TASK_INTERRUPTIBLE || task->state == TASK_UNINTERRUPTIBLE) {
+        } else if (task->__state == TASK_INTERRUPTIBLE || task->__state == TASK_UNINTERRUPTIBLE) {
             // contamos los procesos que estan dormidos
             sleeping_processes++;
             seq_printf(archivo, "\n\t\"estado\": \"dormido\",");
-        } else if (task->state == TASK_STOPPED) {
+        } else if (task->__state == TASK_STOPPED) {
             // contamos los procesos que estan detenidos
             stopped_processes++;
             seq_printf(archivo, "\n\t\"estado\": \"detenido\",");
-        } else if (task->state == TASK_DEAD && task->parent == &init_task) {
+        } else if (task->__state == TASK_DEAD && task->parent == &init_task) {
             // contamos los procesos que estan en modo zombie
             zombie_processes++;
             seq_printf(archivo, "\n\t\"estado\": \"zombie\",");
@@ -161,10 +161,10 @@ static int al_abrir(struct inode *inode, struct file *file)
     return single_open(file, escribir_archivo, NULL);
 }
 
-static const struct file_operations operaciones =
-    {
-        .open = al_abrir,
-        .read = seq_read,
+static struct proc_ops operaciones =
+{
+    .proc_open = al_abrir,
+    .proc_read = seq_read
 };
 
 static int _insert(void)

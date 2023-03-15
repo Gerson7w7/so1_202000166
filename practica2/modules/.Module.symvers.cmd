@@ -1,0 +1,1 @@
+cmd_/home/gerson/Documentos/SO1/so1_202000166/practica2/modules/Module.symvers :=  scripts/mod/modpost -m -a     -o /home/gerson/Documentos/SO1/so1_202000166/practica2/modules/Module.symvers -T /home/gerson/Documentos/SO1/so1_202000166/practica2/modules/modules.order -i Module.symvers -e 
