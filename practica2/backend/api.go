@@ -7,6 +7,7 @@ import (
 	"os/exec"
 	"os/user"
 	"strconv"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -164,7 +165,8 @@ func main() {
 
 		// aumentamos para tener el id del cpu actual
 		cpu_id++
-		
 		fmt.Println("DATOS INSERTADOS :DD")
+
+		time.Sleep(1 * time.Second) // Espera 1 segundo
 	}
 }

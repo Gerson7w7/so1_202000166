@@ -67,7 +67,7 @@ const Stats = () => {
 
     const intervalId = setInterval(() => {
       fetchData();
-    }, 5000); // Hacer una petición cada 5 segundos
+    }, 1000); // Hacer una petición cada 1 segundos
 
     return () => {
       clearInterval(intervalId);
