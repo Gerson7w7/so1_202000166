@@ -1,1 +1,0 @@
-cmd_/home/gerson/Documentos/SO1/so1_202000166/practica2/modules/cpu_202000166.mod := printf '%s\n'   cpu_202000166.o | awk '!x[$$0]++ { print("/home/gerson/Documentos/SO1/so1_202000166/practica2/modules/"$$0) }' > /home/gerson/Documentos/SO1/so1_202000166/practica2/modules/cpu_202000166.mod

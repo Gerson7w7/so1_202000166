@@ -1,1 +1,0 @@
-cmd_/home/gerson/Documentos/SO1/so1_202000166/practica2/modules/modules.order := {   echo /home/gerson/Documentos/SO1/so1_202000166/practica2/modules/cpu_202000166.o;   echo /home/gerson/Documentos/SO1/so1_202000166/practica2/modules/ram_202000166.o; :; } > /home/gerson/Documentos/SO1/so1_202000166/practica2/modules/modules.order
