@@ -48,9 +48,11 @@ func conexionBD() (conexion *sql.DB) {
 	Constrasenia := "your_password"
 	Nombre := "dbpractica2" // nombre de la database
 	Port := "3306"
+	Host := "130.211.192.93"
 
-	conexion, err := sql.Open(Driver, Usuario+":"+Constrasenia+"@tcp(localhost:"+Port+")/"+Nombre) // root:secret@tcp(127.0.0:3306)/dbpractica1
+	conexion, err := sql.Open(Driver, Usuario+":"+Constrasenia+"@tcp("+Host+":"+Port+")/"+Nombre) // root:secret@tcp(127.0.0:3306)/dbpractica1
 	if err != nil {
+		fmt.Println("error 1")
 		panic(err.Error())
 	}
 	return conexion
@@ -59,20 +61,24 @@ func conexionBD() (conexion *sql.DB) {
 func borrarRegistros(conexionEstablecida *sql.DB, cpu_id int) int {
 	_, err := conexionEstablecida.Exec("DELETE FROM subproceso WHERE 1=1;")
 	if err != nil {
+		fmt.Println("error 2")
 		panic(err.Error())
 	}
 	_, err = conexionEstablecida.Exec("DELETE FROM proceso WHERE 1=1;")
 	if err != nil {
+		fmt.Println("error 3")
 		panic(err.Error())
 	}
 
 	if (cpu_id == 11) {
 		_, err = conexionEstablecida.Exec("DELETE FROM cpu WHERE 1=1;")
 		if err != nil {
+			fmt.Println("error 4")
 			panic(err.Error())
 		}
 		_, err = conexionEstablecida.Exec("DELETE FROM ram WHERE 1=1;")
 		if err != nil {
+			fmt.Println("error 5")
 			panic(err.Error())
 		}
 		cpu_id = 1
@@ -88,6 +94,7 @@ func main() {
 		cmd := exec.Command("sh", "-c", "cat /proc/ram_202000166")
 		out, err := cmd.CombinedOutput()
 		if err != nil {
+			fmt.Println("error 6")
 			fmt.Println(err)
 		}
 		output := string(out[:])
@@ -99,6 +106,7 @@ func main() {
 		cmd = exec.Command("sh", "-c", "cat /proc/cpu_202000166")
 		out, err = cmd.CombinedOutput()
 		if err != nil {
+			fmt.Println("error 7")
 			fmt.Println(err)
 		}
 		output = string(out[:])
@@ -114,6 +122,7 @@ func main() {
 		// insertamos en la tabla de RAM
 		insertarRegistro, err2 := conexionEstablecida.Prepare("INSERT INTO ram(id, ram_usada) VALUES(?,?)")
 		if err2 != nil {
+			fmt.Println("error 8")
 			panic(err2.Error())
 		}
 		ramUsada := 100.00 * (float64(ram.Totalram) - float64(ram.Freeram)) / float64(ram.Totalram)
@@ -122,6 +131,7 @@ func main() {
 		// insertamos en la tabla de CPU
 		insertarRegistro, err2 = conexionEstablecida.Prepare("INSERT INTO cpu(id, cpu_usage, running_processes, sleeping_processes, stopped_processes, zombie_processes, total_processes) VALUES(?,?,?,?,?,?,?)")
 		if err2 != nil {
+			fmt.Println("error 9")
 			panic(err2.Error())
 		}
 		cpuUsage := float64(cpu.Cpu_usage) / 10000000.00
@@ -133,6 +143,7 @@ func main() {
 			// insertamos en la tabla de PROCESO
 			insertarRegistro, err2 = conexionEstablecida.Prepare("INSERT INTO proceso(id, pid, _name, _uid, ram_usada, estado, cpu_id) VALUES(?,?,?,?,?,?,?)")
 			if err2 != nil {
+				fmt.Println("error 10")
 				panic(err2.Error())
 			}
 			u, err := user.LookupId(strconv.Itoa(cpu.Procesos[i].Uid))
@@ -151,6 +162,7 @@ func main() {
 				// insertamos en la tabla de SUBPROCESO
 				insertarRegistro, err2 = conexionEstablecida.Prepare("INSERT INTO subproceso(id, pid, nombre, proceso_id) VALUES(?,?,?,?)")
 				if err2 != nil {
+					fmt.Println("error 11")
 					panic(err2.Error())
 				}
 				insertarRegistro.Exec(subproceso_id, cpu.Procesos[i].Hijos[j].Pid, cpu.Procesos[i].Hijos[j].Nombre, proceso_id)

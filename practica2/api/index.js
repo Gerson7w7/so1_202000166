@@ -8,7 +8,7 @@ app.use(cors());
 
 // Crea una conexión a la base de datos MySQL
 const pool = mysql.createPool({
-  host: "localhost",
+  host: "130.211.192.93",
   user: "root",
   password: "your_password",
   database: "dbpractica2",
