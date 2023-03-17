@@ -9,7 +9,7 @@ const Stats = () => {
   const [procesosS, setProcesosS] = useState([]);
 
   useEffect(() => {
-    const url = "http://localhost:5000/get-info";
+    const url = "http://api:5000/get-info";
 
     const fetchData = async () => {
       fetch(url, {
