@@ -1,0 +1,22 @@
+version: '3' # versión de docker 
+
+services:
+  api:
+    container_name: api
+    restart: always 
+    build: ./api/
+    image: gerson7w7/api_practica2_202000166
+    ports:
+      - "5000:5000"
+
+  frontend:
+    container_name: frontend 
+    restart: always 
+    build: ./frontend/
+    image: gerson7w7/frontend_practica2_202000166
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api # el servicio frontend depende de api 
+    links:
+      - api
