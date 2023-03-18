@@ -4,4 +4,4 @@ para clonar: git clone https://<TOKEN>:x-oauth-basic@github.com/<MyUser>/<MyRepo
 
 ver ramas: git branch
 
-pull rama main: git pull origin main
+pull rama main: git pull origin master
