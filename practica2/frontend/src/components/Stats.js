@@ -9,7 +9,7 @@ const Stats = () => {
   const [procesosS, setProcesosS] = useState([]);
 
   useEffect(() => {
-    const url = "http://34.125.54.177:5000/get-info";
+    const url = "http://34.125.132.135:5000/get-info";
 
     const fetchData = async () => {
       fetch(url, {
