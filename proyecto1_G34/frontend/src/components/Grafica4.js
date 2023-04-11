@@ -1,14 +1,6 @@
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, Cell } from 'recharts';
 
-const data = [
-  { name: 'Blanco', value: 1 },
-  { name: 'Verde', value: 1 },
-  { name: 'Rosada', value: 1 },
-  { name: 'Rosada', value: 1 },
-  { name: 'Verde', value: 1 },
-];
-
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
   const { cx, cy, midAngle, innerRadius, outerRadius, startAngle, endAngle, fill, payload, percent, value } = props;
@@ -69,7 +61,7 @@ export default class Grafica4 extends PureComponent {
   };
 
   render() {
-    // const data = this.props.data;
+    const data = this.props.data;
     return (
         <PieChart width={500} height={400}>
           <Pie

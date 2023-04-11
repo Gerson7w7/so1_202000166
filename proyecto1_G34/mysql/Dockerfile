@@ -12,4 +12,4 @@ EXPOSE 3306
 # Agrega un volumen para almacenar datos de MySQL persistentes
 VOLUME /var/lib/mysql
 
-# para correr el contenedor: docker run -d -p 3306:3306 -v $pwd/db_data:/var/lib/mysql nombre_de_la_imagen
+# para correr el contenedor: sudo docker run -p 3306:3306 -v $pwd/db_data:/var/lib/mysql gerson7w7/dbproyecto

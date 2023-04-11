@@ -1,24 +1,9 @@
 import React, { PureComponent } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-const data = [
-  {
-    departamento: 'Guatemala',
-    votos: 2400,
-  },
-  {
-    departamento: 'Peten',
-    votos: 1398,
-  },
-  {
-    departamento: 'Quezaltenango',
-    votos: 9800,
-  },
-];
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 export default class Grafica1 extends PureComponent {
   render() {
-    // const data = this.props.data;
+    const data = this.props.data;
     return (
         <BarChart
           width={500}

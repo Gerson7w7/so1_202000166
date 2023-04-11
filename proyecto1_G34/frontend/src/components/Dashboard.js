@@ -1,11 +1,23 @@
 import React from "react";
 import Stats from "./Stats";
+import WebSocket from 'isomorphic-ws';
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
+  const [fecha, setFecha] = useState(null); // fecha en tiempo real
+
+  useEffect(() => {
+    const socket = new WebSocket('ws://localhost:5000');
+    socket.onmessage = (event) => {
+      const date = JSON.parse(event.data).date;
+      setFecha(date);
+    };
+  }, [fecha]);
+
   return (
     <div className="main">
     <div className="d-flex justify-content-end">
-        <h6>fecha</h6>
+        <h6 className="text-info">Fecha: { fecha }</h6>
     </div>
       <div className="d-flex justify-content-around">
       <img alt="" className="logo" src="https://virgendelcerro.es/wp-content/uploads/2018/02/007-vote.png"/>

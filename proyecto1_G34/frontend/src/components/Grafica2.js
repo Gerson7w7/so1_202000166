@@ -1,18 +1,11 @@
 import React, { PureComponent } from "react";
 import { PieChart, Pie, Cell, Tooltip } from "recharts";
 
-const data01 = [
-  { name: "UNE", value: 43 },
-  { name: "VAMOS", value: 15 },
-  { name: "FCN", value: 20 },
-  { name: "UNIONISTA", value: 11 },
-  { name: "VALOR", value: 11 },
-];
-
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#DC5AE4",];
 
 export default class Grafica2 extends PureComponent {
   render() {
+    const data01 = this.props.data;
     return (
       <PieChart width={400} height={280}>
         <Pie

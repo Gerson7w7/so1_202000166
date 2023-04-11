@@ -8,7 +8,7 @@ import Grafica4 from "./Grafica4";
 const Stats = () => {
   const [municipio, setMunicipio] = useState("");
   const [municipioAux, setMunicipioAux] = useState("");
-  const [departamento, setDepartamento] = useState("guatemala");
+  const [departamento, setDepartamento] = useState("Guatemala");
   const [departamentoAux, setDepartamentoAux] = useState("");
   const [tabla, setTabla] = useState([]);
   const [graph1, setGraph1] = useState([]);
@@ -19,6 +19,7 @@ const Stats = () => {
   useEffect(() => {
     // valores por defecto
     console.log("recargo")
+
     const url = "http://localhost:5000/get-info";
     let data = { municipio: municipio, departamento: departamento };
     const fetchData = async () => {
@@ -32,8 +33,12 @@ const Stats = () => {
         .then((res) => res.json())
         .catch((error) => console.error("Error:", error))
         .then((res) => {
-          console.log(res.res);
-          console.log(data)
+          console.log("res: ", res);
+          setTabla(res.tabla);
+          setGraph1(res.graph1);
+          setGraph2(res.graph2);
+          setGraph3(res.graph3);
+          setGraph4(res.graph4);
         });
     };
     const scrollPosition = parseInt(window.name, 10) || 0;
@@ -65,14 +70,14 @@ const Stats = () => {
           <div className="d-flex justify-content-center">
             <h4>Top 3: departamentos votos para presidente</h4>
           </div>
-          <Grafica1 />
+          <Grafica1 data={graph1} />
         </div>
+
         <div>
           <div className="d-flex justify-content-center">
             <h4>Porcentaje de votos por partido</h4>
           </div>
-
-          <Grafica2 />
+          <Grafica2 data={graph2} />
           <form onSubmit={handleSubmit}>
             <fieldset>
               <div className="form-group">
@@ -88,7 +93,6 @@ const Stats = () => {
                   onChange={(event) => setMunicipioAux(event.target.value)}
                 />
               </div>
-
               <div className="form-group">
                 <label htmlFor="departamento" className="form-label mt-4">
                   Departamento
@@ -118,13 +122,14 @@ const Stats = () => {
           <div className="d-flex justify-content-center">
             <h4>Top 5: sedes con mayores votos almacenados</h4>
           </div>
-          <Grafica3 />
+          <Grafica3 data={graph3} />
         </div>
+
         <div>
           <div className="d-flex justify-content-center">
             <h4>Ultimos 5 votos</h4>
           </div>
-          <Grafica4 />
+          <Grafica4 data={graph4} />
         </div>
       </div>
 
@@ -159,20 +164,20 @@ const Stats = () => {
                     </th>
                   </tr>
                 </thead>
-                {/* <tbody>
-                  {graph4.map((g, index) => (
+                <tbody>
+                  {tabla.map((v, index) => (
                     <tr key={index + 1}>
                       <th className="table-primary" scope="row">
                         {index + 1}
                       </th>
-                      <td className="table-success">{g.sede}</td>
-                      <td className="table-warning">{g.municipio}</td>
-                      <td className="table-success">{g.departamento}</td>
-                      <td className="table-warning">{g.papeleta}</td>
-                      <td className="table-success">{g.partido}</td>
+                      <td className="table-success">{v.sede}</td>
+                      <td className="table-warning">{v.municipio}</td>
+                      <td className="table-success">{v.departamento}</td>
+                      <td className="table-warning">{v.papeleta}</td>
+                      <td className="table-success">{v.partido}</td>
                     </tr>
                   ))}
-                </tbody> */}
+                </tbody>
               </table>
             </div>
           </div>
