@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 ./db_data
+=======
+/locust/__pycache__/
+
+/locust/api_simple/node_modules/
+
+/mysql/db_data/
+
+/ruta1/grpc-client/node_modules/
+
+/ruta1/grpc-server/node_modules/
+>>>>>>> master
