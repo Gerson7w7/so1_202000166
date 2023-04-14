@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 // Crea una conexión a la base de datos MySQL
 const pool = mysql.createPool({
-  host: "localhost",
+  host: "dbproyecto",
   user: "root",
   password: "root",
   database: "dbproyecto1",
