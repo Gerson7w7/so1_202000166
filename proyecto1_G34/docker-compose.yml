@@ -1,17 +1,29 @@
 version: '3' # versión de docker 
 
 services:
-  db:
-    container_name: dbproyecto
+  dbmysql:
+    container_name: dbmysql
     restart: always
     build: ./mysql/
-    image: gerson7w7/bd_proyecto1
+    image: gerson7w7/mysql_proyecto1
     ports:
       - '3306:3306'
     expose:
       - '3306'
     volumes:
       - ./db_data:/var/lib/mysql
+
+  dbredis:
+    container_name: dbredis
+    restart: always
+    build: ./redis/
+    image: gerson7w7/redis_proyecto1
+    ports:
+      - '6379:6379'
+    expose:
+      - '6379'
+    volumes:
+      - ./db_data_redis:/data
 
   api:
     container_name: api 
@@ -21,9 +33,11 @@ services:
     ports:
       - "5000:5000"
     depends_on:
-      - db # el servicio api depende de bd 
+      - dbmysql # el servicio api depende de bd 
+      - dbredis
     links:
-      - db 
+      - dbmysql
+      - dbredis 
 
   frontend:
     container_name: frontend 
@@ -39,3 +53,4 @@ services:
 
 volumes:
   db_data:
+  db_data_redis:

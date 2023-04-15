@@ -8,4 +8,4 @@
 
 /ruta1/grpc-server/node_modules/
 
-./db_data
+/db_data

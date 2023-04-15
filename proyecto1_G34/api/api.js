@@ -3,12 +3,16 @@ const cors = require("cors");
 const mysql = require("mysql2/promise");
 const bodyParser = require("body-parser");
 const WebSocket = require('ws');
+const redis = require('redis');
 
+// express js
 const app = express();
 const port = 5000;
 // cors
 app.use(cors());
 app.use(bodyParser.json());
+// instancia para conectarse a redis
+const client = redis.createClient(6379, 'redisproyecto');
 
 // Crea una conexión a la base de datos MySQL
 const pool = mysql.createPool({
@@ -16,6 +20,10 @@ const pool = mysql.createPool({
   user: "root",
   password: "root",
   database: "dbproyecto1",
+});
+// crea una conexión con la bd de Redis
+client.on('connect', function() {
+  console.log('Conectado a Redis');
 });
 
 app.post("/get-info", async (req, res) => {
@@ -75,6 +83,9 @@ app.post("/get-info", async (req, res) => {
     }
 
     // ============== REDIS =================
+    client.get('voto', function(err, reply) {
+      console.log("redisss: ",reply);
+    });
     // Gráfico de barras que muestre las 5 sedes con mayores votos almacenados en Redis.
     let graph3 = [];
     for (let i = 0; i < votos.length; i++) {

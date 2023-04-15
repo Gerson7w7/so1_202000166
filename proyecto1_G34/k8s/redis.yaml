@@ -1,0 +1,52 @@
+# espacio donde se crearan todos los pods
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: proyecto1 # nombre del namespace
+---
+# servicio para conectarse entre pods y fuera de los mismos
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-sv # nombre del servicio
+  namespace: proyecto1
+spec:
+  type: ClusterIP
+  selector:
+    app: redis # quien usara el servicio
+  ports:
+    - name: http
+      port: 6379
+      targetPort: 6379
+---
+# deployment para desplegar nuestros pods
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis # nombre del deployment
+  namespace: proyecto1
+  labels:
+    app: redis # label del deployment (se podría omitir)
+spec:
+  replicas: 1 # replicas del pod
+  selector:
+    matchLabels:
+      app: redis
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      # contenedores del pod
+      containers:
+      - name: redis # nombre del contenedor
+        image: gerson7w7/redis_proyecto1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 6379

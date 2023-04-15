@@ -1,0 +1,52 @@
+# espacio donde se crearan todos los pods
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: proyecto1 # nombre del namespace
+---
+# servicio para conectarse entre pods y fuera de los mismos
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-sv # nombre del servicio
+  namespace: proyecto1
+spec:
+  type: LoadBalancer
+  selector:
+    app: api # quien usara el servicio
+  ports:
+    - name: http
+      port: 5000
+      targetPort: 5000
+---
+# deployment para desplegar nuestros pods
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api # nombre del deployment
+  namespace: proyecto1
+  labels:
+    app: api # label del deployment (se podría omitir)
+spec:
+  replicas: 1 # replicas del pod
+  selector:
+    matchLabels:
+      app: api
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      # contenedores del pod
+      containers:
+      - name: api # nombre del contenedor
+        image: gerson7w7/api_proyecto1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
