@@ -9,7 +9,7 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql-sv # nombre del servicio
+  name: mysql # nombre del servicio
   namespace: proyecto1
 spec:
   type: ClusterIP
@@ -22,7 +22,7 @@ spec:
 ---
 # volumen para persistencia de datos
 apiVersion: v1
-kind: PersistentVolumenClaim
+kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
   labels:
@@ -47,6 +47,7 @@ spec:
   selector:
     matchLabels:
       app: mysql
+  minReadySeconds: 20
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -60,8 +61,8 @@ spec:
       # uso de volumen
       volumes:
       - name: mysql-persistent-storage # nombre del volumen
-      persistentVolumeClaim:
-        claimName: mysql-pv-claim # volumen a usar
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim # volumen a usar
       # contenedores del pod
       containers:
       - name: mysql # nombre del contenedor
