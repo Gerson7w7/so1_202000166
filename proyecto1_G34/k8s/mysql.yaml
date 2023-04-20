@@ -1,24 +1,16 @@
-# espacio donde se crearan todos los pods
-apiVersion: v1
-kind: Namespace
-metadata:
-  creationTimestamp: null
-  name: proyecto1 # nombre del namespace
 ---
 # servicio para conectarse entre pods y fuera de los mismos
 apiVersion: v1
 kind: Service
 metadata:
-  name: mysql # nombre del servicio
-  namespace: proyecto1
+  name: database-svc
 spec:
   type: ClusterIP
   selector:
-    app: mysql # quien usara el servicio
+    app: database
   ports:
-    - name: http
-      port: 3306
-      targetPort: 3306
+  - port: 3306        # Puerto del servicio
+    targetPort: 3306  # Puerto de la applicacion
 ---
 # volumen para persistencia de datos
 apiVersion: v1
@@ -32,42 +24,36 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 20Gi
+      storage: 10Gi
 ---
 # deployment para desplegar nuestros pods
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql # nombre del deployment
-  namespace: proyecto1
-  labels:
-    app: mysql # label del deployment (se podría omitir)
+  name: database
 spec:
-  replicas: 1 # replicas del pod
+  replicas: 1
   selector:
     matchLabels:
-      app: mysql
-  minReadySeconds: 20
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
+      app: database
   template:
     metadata:
       labels:
-        app: mysql
+        app: database
     spec:
       # uso de volumen
       volumes:
-      - name: mysql-persistent-storage # nombre del volumen
+      - name: mysql-persistent-storage
         persistentVolumeClaim:
-          claimName: mysql-pv-claim # volumen a usar
+          claimName: mysql-pv-claim
       # contenedores del pod
       containers:
-      - name: mysql # nombre del contenedor
+      - name: database
         image: gerson7w7/mysql_proyecto1
-        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "500m" # 1/2 CPU
         ports:
         - containerPort: 3306
         volumeMounts:

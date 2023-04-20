@@ -20,7 +20,7 @@ const Stats = () => {
     // valores por defecto
     console.log("recargo")
 
-    const url = "http://localhost:5000/get-info";
+    const url = "http://34.122.143.55:5000/get-info";
     let data = { municipio: municipio, departamento: departamento };
     const fetchData = async () => {
       fetch(url, {
