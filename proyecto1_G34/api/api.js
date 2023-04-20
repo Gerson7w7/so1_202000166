@@ -2,8 +2,8 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql2/promise");
 const bodyParser = require("body-parser");
-const WebSocket = require('ws');
-const redis = require('redis');
+const WebSocket = require("ws");
+const redis = require("redis");
 
 // express js
 const app = express();
@@ -11,20 +11,20 @@ const port = 5000;
 // cors
 app.use(cors());
 app.use(bodyParser.json());
-// instancia para conectarse a redis
-// const client = redis.createClient(6379, 'redisproyecto');
 
 // Crea una conexión a la base de datos MySQL
 const pool = mysql.createPool({
-  host: "10.8.0.81",
+  host: "dbmysql",
   user: "root",
   password: "root",
   database: "dbproyecto1",
 });
-// crea una conexión con la bd de Redis
-// client.on('connect', function() {
-//   console.log('Conectado a Redis');
-// });
+
+// instancia para conectarse a redis
+const client = redis.createClient({
+  host: "dbredis",
+  port: 6379,
+});
 
 app.post("/get-info", async (req, res) => {
   console.log("/get-info");
@@ -83,16 +83,28 @@ app.post("/get-info", async (req, res) => {
     }
 
     // ============== REDIS =================
-    // client.get('voto', function(err, reply) {
-    //   console.log("redisss: ",reply);
-    // });
+    client.keys("*", (error, keys) => {
+      client.mget(keys, (error, values) => {
+        if (error) {
+          console.error(error);
+          res.status(500).send("Error al obtener los datos.");
+        } else {
+          const data = [];
+          keys.forEach((key, index) => {
+            data.push(JSON.parse(values[index]));
+          });
+          res.send(data);
+        }
+      });
+    });
+
     // Gráfico de barras que muestre las 5 sedes con mayores votos almacenados en Redis.
     let graph3 = [];
-    for (let i = 0; i < votos.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       let nuevaSede = true;
       // iteramos graph3 para ver si ya está en la lista la sede
       for (let j = 0; j < graph3.length; j++) {
-        if (votos[i].sede === graph3[j].sede) {
+        if (data[i].sede === graph3[j].sede) {
           // si ya esta en la lista la sede, agregamos un voto
           graph3[j].votos += 1;
           nuevaSede = false;
@@ -101,7 +113,7 @@ app.post("/get-info", async (req, res) => {
       }
       if (nuevaSede) {
         // si no esta en la lista lo añadimos
-        graph3.push({ sede: votos[i].sede, votos: 1 });
+        graph3.push({ sede: data[i].sede, votos: 1 });
       }
     }
     graph3.sort((x, y) => y.votos - x.votos); // ordenamos de mayor a menor
@@ -110,10 +122,10 @@ app.post("/get-info", async (req, res) => {
     // Últimos 5 votos almacenados en Redis.
     let graph4 = [];
     let contador = 0;
-    for (let i = votos.length - 1; i >= 0; i--) {
-      graph4.push({ name: votos[i].papeleta, value: 1 })
-      contador++
-      if (contador === 5) break; 
+    for (let i = data.length - 1; i >= 0; i--) {
+      graph4.push({ name: data[i].papeleta, value: 1 });
+      contador++;
+      if (contador === 5) break;
     }
 
     // Envía la respuesta con los resultados de todas las consultas
@@ -124,7 +136,7 @@ app.post("/get-info", async (req, res) => {
           graph1: graph1,
           graph2: graph2,
           graph3: graph3,
-          graph4: graph4
+          graph4: graph4,
         });
       },
     });
@@ -134,18 +146,27 @@ app.post("/get-info", async (req, res) => {
   }
 });
 
+app.get("/delete-info", async (req, res) => {
+  // eliminamos toda la base de datos
+  await pool.query("DELETE FROM voto WHERE 1=1;");
+  // eliminamos toda la base de datos de redis
+  client.flushall((error, response) => {});
+
+  res.send({ res: "datos borrados :D" });
+});
+
 const server = app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
 
 const wss = new WebSocket.Server({ server });
 
-wss.on('connection', (ws) => {
-  console.log('Nueva conexión WebSocket establecida');
+wss.on("connection", (ws) => {
+  console.log("Nueva conexión WebSocket establecida");
 
   const sendDate = () => {
     const date = new Date();
-    console.log("fecha: ", date)
+    console.log("fecha: ", date);
     ws.send(JSON.stringify({ date: date }));
   };
 
@@ -153,8 +174,8 @@ wss.on('connection', (ws) => {
   const timerId = setInterval(sendDate, 1000);
 
   // Escucha el evento "close" del cliente
-  ws.on('close', () => {
-    console.log('Conexión WebSocket cerrada');
+  ws.on("close", () => {
+    console.log("Conexión WebSocket cerrada");
 
     // Detiene el temporizador cuando el cliente se desconecta
     clearInterval(timerId);

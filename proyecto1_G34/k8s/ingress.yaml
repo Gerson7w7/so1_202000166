@@ -19,6 +19,6 @@ spec:
               service:
                 name: redis-pub-svc
                 port:
-                  number: 4100
+                  number: 1500
             path: /
             pathType: Prefix

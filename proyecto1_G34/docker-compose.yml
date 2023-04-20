@@ -22,8 +22,30 @@ services:
       - '6379:6379'
     expose:
       - '6379'
-    volumes:
-      - ./db_data_redis:/data
+
+  grpc-server:
+    container_name: ruta1-server
+    restart: always
+    build: ./grpc-server
+    image: gerson7w7/grpc-server_proyecto1
+    ports:
+      - "50051:50051"
+    depends_on:
+      - db
+    links:
+      - db
+  
+  grpc-client:
+    container_name: ruta1-client
+    restart: always
+    build: ./grpc-client 
+    image: gerson7w7/grpc-client_proyecto1
+    ports:
+      - "4000:4000"
+    depends_on:
+      - grpc-server
+    links:
+      - grpc-server
 
   api:
     container_name: api 
@@ -53,4 +75,3 @@ services:
 
 volumes:
   db_data:
-  db_data_redis:
