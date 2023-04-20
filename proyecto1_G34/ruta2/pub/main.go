@@ -3,6 +3,7 @@ package main
 import (
 	"context"
     "encoding/json"
+    "strconv"
     "github.com/go-redis/redis/v8"
     "github.com/gofiber/fiber/v2"
 )
@@ -18,13 +19,13 @@ type Voto struct {
 var ctx = context.Background()
 
 var redisClient = redis.NewClient(&redis.Options{
-    Addr: "localhost:6379",
+    Addr: "redis:6379",
 })
 
 func main() {
     app := fiber.New()
 
-    app.Post("/", func(c *fiber.Ctx) error {
+    app.Post("/add-voto", func(c *fiber.Ctx) error {
         voto := new(Voto)
 
         if err := c.BodyParser(voto); err != nil {
@@ -40,8 +41,17 @@ func main() {
             panic(err)
         }
 
+        //Se incrementa y obtieene el contador de votos
+        contador, err := redisClient.Incr(ctx, "contador").Result()
+        
+        //Se guarda el nuevo voto en Redis
+        err = redisClient.Set(ctx, strconv.Itoa(int(contador)), payload, 0).Err()
+        if err != nil {
+            panic(err)
+        }
+
         return c.SendStatus(200)
     })
 
-    app.Listen(":1500")
+    app.Listen(":4100")
 }

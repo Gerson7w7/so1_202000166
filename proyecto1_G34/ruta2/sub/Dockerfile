@@ -11,8 +11,6 @@ COPY . .
 # Instala dependencias
 RUN go mod download
 
-EXPOSE 1500
-
 CMD ["go", "run", "/main.go"]
 
-# Para correr el contenedor: docker run -d -p 1500:1500 nombre_de_la_imagen
+# Para correr el contenedor: docker run -d nombre_de_la_imagen

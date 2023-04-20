@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  redis:
+    container_name: redis
+    restart: always
+    image: redis-sopes
+    ports:
+      - "6379:6379"
+    expose:
+      - "6379"
+
+  database:
+    container_name: mysql
+    restart: always
+    image: db-sopes
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+
+  pub:
+    container_name: ruta2-pub
+    restart: always
+    image: pub
+    ports:
+      - "4100:4100"
+    depends_on:
+      - redis
+    links:
+      - redis
+  
+  sub:
+    container_name: ruta2-sub
+    restart: always
+    image: sub
+    depends_on:
+      - redis
+    links:
+      - redis
+      - database
