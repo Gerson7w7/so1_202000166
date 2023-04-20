@@ -17,6 +17,6 @@
     "google-protobuf": "^3.21.2",
     "lodash": "^4.17.21",
     "minimist": "^1.2.8",
-    "mysql": "^2.18.1"
+    "mysql2": "^3.2.3"
   }
 }

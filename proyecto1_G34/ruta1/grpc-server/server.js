@@ -18,7 +18,7 @@ var voto_proto = grpc.loadPackageDefinition(packageDefinition).voto;
 function AddVoto(call, callback) {
   const query = `INSERT INTO voto (sede, municipio, departamento, papeleta, partido)
     VALUES (${call.request.sede}, '${call.request.municipio}', '${call.request.departamento}',
-            '${call.request.papeleta}', '${call.request.partido}';`;
+           '${call.request.papeleta}', '${call.request.partido}');`;
   Conn.query(query, function(err, rows, fields) {
     if (err) throw err;
     callback(null, {message: 'Voto insertado en la base de datos por ruta 1'});

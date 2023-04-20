@@ -36,7 +36,7 @@ class CargaTrafico(HttpUser):
         data = self.reader.getData()
         if data is not None:
             #Pendiente ruta definitiva
-            res = self.client.post("/add", json=data)
+            res = self.client.post("/add-voto", json=data)
             print(res.json())
         else:
             print("Empty")

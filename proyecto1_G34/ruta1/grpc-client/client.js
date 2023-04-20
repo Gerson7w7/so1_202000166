@@ -13,30 +13,42 @@ var packageDefinition = protoLoader.loadSync(
     });
 var voto_proto = grpc.loadPackageDefinition(packageDefinition).voto;
 
-function main() {
-    var argv = parseArgs(process.argv.slice(2), {
-        string: 'target'
-    });
-    var target;
-    if (argv.target) {
-        target = argv.target;
-    } else {
-        target = 'localhost:50051';
-    }
-
-    var client = new voto_proto.Votos(target, grpc.credentials.createInsecure());
-    
-    var sede, municipio, departamento, papeleta, partido;
-    
-    if (argv._.length > 0) {
-        sede = argv._[0];
-        municipio = argv._[1];
-        departamento = argv._[2];
-        papeleta = argv._[3];
-        partido = argv._[4];
-
-        client.Votos({ sede: sede, municipio: municipio, departamento: departamento, papeleta: papeleta, partido: partido }, function(err, response){
-            console.log('Respuesta:', response.message);
-        });
-    }
+var argv = parseArgs(process.argv.slice(2), {
+    string: 'target'
+});
+var target;
+if (argv.target) {
+    target = argv.target;
+} else {
+    target = 'ruta1-server:50051';
 }
+var client = new voto_proto.Votos(target, grpc.credentials.createInsecure());
+
+//API
+const express = require('express');
+var cors = require('cors');
+const app = express();
+const PORT = 4000;
+
+app.use(express.json());
+app.use(cors());
+
+app.get("/", (req, res) => {
+    res.send("Server Status: OK");
+});
+
+app.post('/add-voto', function (req, res) {
+    const data_voto = {
+        sede : req.body.sede,
+        municipio : req.body.municipio,
+        departamento : req.body.departamento,
+        papeleta : req.body.papeleta,
+        partido : req.body.partido
+    };
+    
+    client.AddVoto(data_voto, function(err, response) {
+        res.status(200).json({message: response.message})
+    });
+})
+
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
