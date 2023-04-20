@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: balanceador
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: 
+      http:
+        paths:
+          - backend:
+              service:
+                name: grpc-client-svc
+                port:
+                  number: 4000
+            path: /
+            pathType: Prefix
+          - backend:
+              service:
+                name: redis-pub-svc
+                port:
+                  number: 4100
+            path: /
+            pathType: Prefix
