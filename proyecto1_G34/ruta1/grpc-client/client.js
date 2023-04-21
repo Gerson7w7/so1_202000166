@@ -20,7 +20,7 @@ var target;
 if (argv.target) {
     target = argv.target;
 } else {
-    target = 'ruta1-server:50051';
+    target = 'grpc-server:50051';
 }
 var client = new voto_proto.Votos(target, grpc.credentials.createInsecure());
 

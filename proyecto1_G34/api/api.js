@@ -4,6 +4,7 @@ const mysql = require("mysql2/promise");
 const bodyParser = require("body-parser");
 const WebSocket = require("ws");
 const redis = require("redis");
+const { promisify } = require("util");
 
 // express js
 const app = express();
@@ -25,6 +26,14 @@ const client = redis.createClient({
   host: "dbredis",
   port: 6379,
 });
+client.on('connect', () => {
+  console.log('Conectado a Redis');
+});
+client.on('error', (err) => {
+  console.log('Error en la conexión a Redis: ', err);
+});
+const mgetAsync = promisify(client.mget).bind(client);
+const keysAsync = promisify(client.keys).bind(client);
 
 app.post("/get-info", async (req, res) => {
   console.log("/get-info");
@@ -83,21 +92,12 @@ app.post("/get-info", async (req, res) => {
     }
 
     // ============== REDIS =================
-    client.keys("*", (error, keys) => {
-      client.mget(keys, (error, values) => {
-        if (error) {
-          console.error(error);
-          res.status(500).send("Error al obtener los datos.");
-        } else {
-          const data = [];
-          keys.forEach((key, index) => {
-            data.push(JSON.parse(values[index]));
-          });
-          res.send(data);
-        }
-      });
-    });
+    let data = [];
+    const keys = await keysAsync("*");
+    const values = await mgetAsync(keys);
+    data = values.map((value) => JSON.parse(value));
 
+    console.log("dtaaa 333: ", data)
     // Gráfico de barras que muestre las 5 sedes con mayores votos almacenados en Redis.
     let graph3 = [];
     for (let i = 0; i < data.length; i++) {

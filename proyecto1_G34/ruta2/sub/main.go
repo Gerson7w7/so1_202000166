@@ -22,7 +22,7 @@ type Voto struct {
 var ctx = context.Background()
 
 var redisClient = redis.NewClient(&redis.Options{
-    Addr: "redis:6379",
+    Addr: "dbredis:6379",
 })
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 func obtenerBaseDeDatos() (db *sql.DB, e error) {
 	usuario := "root"
 	pass := "root"
-	host := "tcp(database:3306)"
+	host := "tcp(dbmysql:3306)"
 	nombreBaseDeDatos := "dbproyecto1"
 	// Debe tener la forma usuario:contraseña@host/nombreBaseDeDatos
 	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@%s/%s", usuario, pass, host, nombreBaseDeDatos))

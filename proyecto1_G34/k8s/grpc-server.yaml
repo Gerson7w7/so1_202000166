@@ -1,0 +1,36 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpc-server-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: grpc-server
+  ports:
+  - port: 50051        # Puerto del servicio
+    targetPort: 50051  # Puerto de la applicacion
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grpc-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grpc-server
+  template:
+    metadata:
+      labels:
+        app: grpc-server
+    spec:
+      containers:
+      - name: grpc-server
+        image: gerson7w7/grpc-server_proyecto1
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "100m"
+        ports:
+        - containerPort: 50051

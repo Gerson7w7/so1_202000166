@@ -19,7 +19,7 @@ type Voto struct {
 var ctx = context.Background()
 
 var redisClient = redis.NewClient(&redis.Options{
-    Addr: "redis:6379",
+    Addr: "dbredis:6379",
 })
 
 func main() {

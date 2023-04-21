@@ -1,0 +1,36 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pub-redis-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: pub-redis-server
+  ports:
+  - port: 4100        # Puerto del servicio
+    targetPort: 4100  # Puerto de la applicacion
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pub-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pub-redis
+  template:
+    metadata:
+      labels:
+        app: pub-redis
+    spec:
+      containers:
+      - name: pub-redis
+        image: gerson7w7/pub-redis_proyecto1
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "100m"
+        ports:
+        - containerPort: 4100

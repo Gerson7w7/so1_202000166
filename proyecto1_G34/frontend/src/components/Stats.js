@@ -15,12 +15,13 @@ const Stats = () => {
   const [graph2, setGraph2] = useState([]);
   const [graph3, setGraph3] = useState([]);
   const [graph4, setGraph4] = useState([]);
+  const ip = 'localhost'
 
   useEffect(() => {
     // valores por defecto
     console.log("recargo")
 
-    const url = "http://34.122.143.55:5000/get-info";
+    const url = `http://${ip}:5000/get-info`;
     let data = { municipio: municipio, departamento: departamento };
     const fetchData = async () => {
       fetch(url, {

@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sub-redis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sub-redis
+  template:
+    metadata:
+      labels:
+        app: sub-redis
+    spec:
+      containers:
+      - name: sub-redis
+        image: gerson7w7/sub-redis_proyecto1
+        resources:
+          limits:
+            memory: "2Gi"
+            cpu: "100m"

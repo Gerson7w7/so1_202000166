@@ -11,7 +11,7 @@ COPY . .
 # Instala dependencias
 RUN go mod download
 
-EXPOSE 1500
+EXPOSE 4100
 
 CMD ["go", "run", "/main.go"]
 

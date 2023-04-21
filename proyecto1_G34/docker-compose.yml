@@ -1,5 +1,6 @@
 version: '3' # versión de docker 
 
+# ===== BASE DE DATOS =====
 services:
   dbmysql:
     container_name: dbmysql
@@ -23,22 +24,23 @@ services:
     expose:
       - '6379'
 
+# ===== GRPC =====
   grpc-server:
-    container_name: ruta1-server
+    container_name: grpc-server
     restart: always
-    build: ./grpc-server
+    build: ./ruta1/grpc-server/
     image: gerson7w7/grpc-server_proyecto1
     ports:
       - "50051:50051"
     depends_on:
-      - db
+      - dbmysql
     links:
-      - db
+      - dbmysql
   
   grpc-client:
-    container_name: ruta1-client
+    container_name: grpc-client
     restart: always
-    build: ./grpc-client 
+    build: ./ruta1/grpc-client/ 
     image: gerson7w7/grpc-client_proyecto1
     ports:
       - "4000:4000"
@@ -47,6 +49,31 @@ services:
     links:
       - grpc-server
 
+# ===== PUB Y SUB =====
+  pub:
+    container_name: pub
+    restart: always
+    build: ./ruta2/pub/ 
+    image: gerson7w7/pub_proyecto1
+    ports:
+      - "4100:4100"
+    depends_on:
+      - dbredis
+    links:
+      - dbredis
+  
+  sub:
+    container_name: sub
+    restart: always
+    build: ./ruta2/sub/ 
+    image: gerson7w7/sub_proyecto1
+    depends_on:
+      - dbredis
+    links:
+      - dbredis
+      - dbmysql
+
+# ===== API =====
   api:
     container_name: api 
     restart: always 
@@ -61,6 +88,7 @@ services:
       - dbmysql
       - dbredis 
 
+# ===== FRONTEND =====
   frontend:
     container_name: frontend 
     restart: always 

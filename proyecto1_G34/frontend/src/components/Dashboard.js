@@ -5,9 +5,10 @@ import { useEffect, useState } from "react";
 
 const Dashboard = () => {
   const [fecha, setFecha] = useState(null); // fecha en tiempo real
+  const ip = 'localhost' 
 
   useEffect(() => {
-    const socket = new WebSocket('ws://34.122.143.55:5000');
+    const socket = new WebSocket(`ws://${ip}:5000`);
     socket.onmessage = (event) => {
       const date = JSON.parse(event.data).date;
       setFecha(date);
