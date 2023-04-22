@@ -13,12 +13,12 @@ spec:
                 name: grpc-client-svc
                 port:
                   number: 4000
-            path: /
+            path: /add-voto
             pathType: Prefix
           - backend:
               service:
                 name: redis-pub-svc
                 port:
                   number: 4100
-            path: /
+            path: /add-voto
             pathType: Prefix
