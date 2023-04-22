@@ -18,6 +18,7 @@ El objeto "VotoRequest" es un mensaje que tiene 5 campos: "sede", "municipio", "
 El objeto "Reply" es un mensaje que tiene un único campo llamado "message" que es de tipo string. Este mensaje se utiliza como el objeto que se recibe en la respuesta del método "AddVoto".
 
 Los bloques de opciones en el archivo proporcionan información adicional para la generación de código en lenguajes específicos. Por ejemplo, la opción java_package establece el paquete Java en el que se generará el código. La opción objc_class_prefix establece un prefijo para las clases generadas en Objective-C. La opción java_outer_classname establece el nombre de la clase Java que contiene el servicio y los mensajes definidos en el archivo. La opción java_multiple_files indica que se generarán múltiples archivos de Java para el servicio y los mensajes en lugar de uno solo.
+
 ![This is an image](./images/proto.png)
 
 ## gRPC CLIENT
