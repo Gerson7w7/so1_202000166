@@ -52,7 +52,7 @@ spec:
         image: gerson7w7/mysql_proyecto1
         resources:
           limits:
-            memory: "2Gi"
+            memory: "1Gi"
             cpu: "500m" # 1/2 CPU
         ports:
         - containerPort: 3306

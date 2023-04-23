@@ -15,7 +15,7 @@ const Stats = () => {
   const [graph2, setGraph2] = useState([]);
   const [graph3, setGraph3] = useState([]);
   const [graph4, setGraph4] = useState([]);
-  const ip = 'localhost'
+  const ip = '35.202.27.27'
 
   useEffect(() => {
     // valores por defecto

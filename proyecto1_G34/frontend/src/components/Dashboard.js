@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const Dashboard = () => {
   const [fecha, setFecha] = useState(null); // fecha en tiempo real
-  const ip = 'localhost' 
+  const ip = '35.202.27.27' 
 
   useEffect(() => {
     const socket = new WebSocket(`ws://${ip}:5000`);

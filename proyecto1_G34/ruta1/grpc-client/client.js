@@ -20,7 +20,7 @@ var target;
 if (argv.target) {
     target = argv.target;
 } else {
-    target = 'grpc-server:50051';
+    target = '10.8.5.81:50051';
 }
 var client = new voto_proto.Votos(target, grpc.credentials.createInsecure());
 

@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // Crea una conexión a la base de datos MySQL
 const pool = mysql.createPool({
-  host: "dbmysql",
+  host: "10.8.12.153",
   user: "root",
   password: "root",
   database: "dbproyecto1",
@@ -23,7 +23,7 @@ const pool = mysql.createPool({
 
 // instancia para conectarse a redis
 const client = redis.createClient({
-  host: "dbredis",
+  host: "10.8.6.52",
   port: 6379,
 });
 client.on('connect', () => {

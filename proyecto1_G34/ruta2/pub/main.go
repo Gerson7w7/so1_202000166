@@ -6,6 +6,7 @@ import (
     "strconv"
     "github.com/go-redis/redis/v8"
     "github.com/gofiber/fiber/v2"
+    "fmt"
 )
 
 type Voto struct {
@@ -19,10 +20,11 @@ type Voto struct {
 var ctx = context.Background()
 
 var redisClient = redis.NewClient(&redis.Options{
-    Addr: "dbredis:6379",
+    Addr: "10.8.6.52:6379",
 })
 
 func main() {
+    fmt.Printf("hloaaaaaaaaa")
     app := fiber.New()
 
     app.Post("/add-voto", func(c *fiber.Ctx) error {
@@ -50,8 +52,10 @@ func main() {
             panic(err)
         }
 
+        fmt.Printf("se insertoooo")
         return c.SendStatus(200)
     })
 
+    fmt.Printf("Servidor escuchando en el puerto 4100...")
     app.Listen(":4100")
 }
