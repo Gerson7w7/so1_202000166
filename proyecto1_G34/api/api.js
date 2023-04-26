@@ -123,7 +123,7 @@ app.post("/get-info", async (req, res) => {
     let graph4 = [];
     let contador = 0;
     for (let i = data.length - 1; i >= 0; i--) {
-      graph4.push({ name: data[i].papeleta, value: 1 });
+      graph4.push(data[i]);
       contador++;
       if (contador === 5) break;
     }

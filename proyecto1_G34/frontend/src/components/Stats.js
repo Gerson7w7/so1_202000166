@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Grafica1 from "./Grafica1";
 import Grafica2 from "./Grafica2";
 import Grafica3 from "./Grafica3";
-import Grafica4 from "./Grafica4";
+// import Grafica4 from "./Grafica4";
 
 const Stats = () => {
   const [municipio, setMunicipio] = useState("");
@@ -15,11 +15,11 @@ const Stats = () => {
   const [graph2, setGraph2] = useState([]);
   const [graph3, setGraph3] = useState([]);
   const [graph4, setGraph4] = useState([]);
-  const ip = 'api-svc'
+  const ip = "api-svc";
 
   useEffect(() => {
     // valores por defecto
-    console.log("recargo")
+    console.log("recargo");
 
     const url = `http://${ip}:5000/get-info`;
     let data = { municipio: municipio, departamento: departamento };
@@ -130,7 +130,46 @@ const Stats = () => {
           <div className="d-flex justify-content-center">
             <h4>Ultimos 5 votos</h4>
           </div>
-          <Grafica4 data={graph4} />
+          <div className="d-flex justify-content-center">
+            <table className="table table-hover">
+              <thead>
+                <tr>
+                  <th className="table-dark" scope="col">
+                    No.
+                  </th>
+                  <th className="table-active" scope="col">
+                    Sede
+                  </th>
+                  <th className="table-dark" scope="col">
+                    Municipio
+                  </th>
+                  <th className="table-active" scope="col">
+                    Departamento
+                  </th>
+                  <th className="table-dark" scope="col">
+                    Papeleta
+                  </th>
+                  <th className="table-active" scope="col">
+                    Partido
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {graph4.map((v, index) => (
+                  <tr key={index + 1}>
+                    <th className="table-primary" scope="row">
+                      {index + 1}
+                    </th>
+                    <td className="table-success">{v.sede}</td>
+                    <td className="table-warning">{v.municipio}</td>
+                    <td className="table-success">{v.departamento}</td>
+                    <td className="table-warning">{v.papeleta}</td>
+                    <td className="table-success">{v.partido}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
