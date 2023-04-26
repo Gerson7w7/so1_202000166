@@ -1,7 +1,7 @@
 var mysql = require("mysql2");
 
 var connectionMYSQL = mysql.createConnection({
-  host: "10.8.12.153",
+  host: "database-svc",
   user: "root",
   password: "root",
   database: "dbproyecto1",

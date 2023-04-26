@@ -1,37 +1,23 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: ingress-svc
-spec:
-  type: ClusterIP
-  ports:
-    - name: http
-      port: 80
-      targetPort: 8080
-  selector:
-    app: backend
----
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: balanceador
 spec:
-  ingressClassName: nginx
   rules:
-    - host: 
-      http:
-        paths:
-          - backend:
-              service:
-                name: grpc-client-svc
-                port:
-                  number: 4000
-            path: /add-voto
-            pathType: Prefix
-          - backend:
-              service:
-                name: redis-pub-svc
-                port:
-                  number: 4100
-            path: /add-voto
-            pathType: Prefix
+  - host: cafe.example.com
+    http:
+      paths:
+      - path: /add-voto
+        pathType: Prefix
+        backend:
+          service:
+            name: grpc-client-svc
+            port:
+              number: 4000
+      - path: /add-voto
+        pathType: Prefix
+        backend:
+          service:
+            name: pub-redis-svc
+            port:
+              number: 4100
