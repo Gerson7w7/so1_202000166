@@ -4,20 +4,19 @@ metadata:
   name: balanceador
 spec:
   rules:
-  - host: cafe.example.com
-    http:
-      paths:
-      - path: /add-voto
-        pathType: Prefix
-        backend:
-          service:
-            name: grpc-client-svc
-            port:
-              number: 4000
-      - path: /add-voto
-        pathType: Prefix
-        backend:
-          service:
-            name: pub-redis-svc
-            port:
-              number: 4100
+    - http:
+        paths:
+          - backend:
+              service:
+                name: grpc-client-svc
+                port:
+                  number: 4000
+            path: /add-voto
+            pathType: Prefix
+          - backend:
+              service:
+                name: pub-redis-svc
+                port:
+                  number: 4100
+            path: /add-voto
+            pathType: Prefix
