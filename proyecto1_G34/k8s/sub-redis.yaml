@@ -1,8 +1,14 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: p1
+  namespace: p1
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sub-redis
+  namespace: p1
 spec:
   replicas: 1
   selector:

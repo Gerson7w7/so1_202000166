@@ -2,7 +2,6 @@ const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql2/promise");
 const bodyParser = require("body-parser");
-const WebSocket = require("ws");
 const redis = require("redis");
 const { promisify } = require("util");
 
@@ -155,29 +154,12 @@ app.get("/delete-info", async (req, res) => {
   res.send({ res: "datos borrados :D" });
 });
 
-const server = app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+app.get("/get-fecha", async (req, res) => {
+  const date = new Date();
+  console.log("fecha: ", date);
+  res.send(JSON.stringify({ fecha: date }));
 });
 
-const wss = new WebSocket.Server({ server });
-
-wss.on("connection", (ws) => {
-  console.log("Nueva conexión WebSocket establecida");
-
-  const sendDate = () => {
-    const date = new Date();
-    console.log("fecha: ", date);
-    ws.send(JSON.stringify({ date: date }));
-  };
-
-  // Envía la fecha actual al cliente cada 1 segundos
-  const timerId = setInterval(sendDate, 1000);
-
-  // Escucha el evento "close" del cliente
-  ws.on("close", () => {
-    console.log("Conexión WebSocket cerrada");
-
-    // Detiene el temporizador cuando el cliente se desconecta
-    clearInterval(timerId);
-  });
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
 });

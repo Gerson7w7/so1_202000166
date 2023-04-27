@@ -1,6 +1,5 @@
 import React from "react";
 import Stats from "./Stats";
-import WebSocket from 'isomorphic-ws';
 import { useEffect, useState } from "react";
 
 const Dashboard = () => {
@@ -8,10 +7,23 @@ const Dashboard = () => {
   const ip = 'api-svc' 
 
   useEffect(() => {
-    const socket = new WebSocket(`ws://${ip}:5000`);
-    socket.onmessage = (event) => {
-      const date = JSON.parse(event.data).date;
-      setFecha(date);
+    const url = `http://${ip}:5000/get-fecha`;
+    const fetchData = async () => {
+      fetch(url)
+        .then((res) => res.json())
+        .catch((error) => console.error("Error:", error))
+        .then((res) => {
+          setFecha(res.fecha);
+        });
+    };
+
+    fetchData();
+    const intervalId = setInterval(() => {
+      fetchData();
+    }, 1000); // Hacer una petición cada 1 segundos
+
+    return () => {
+      clearInterval(intervalId);
     };
   }, [fecha]);
 
