@@ -27,6 +27,10 @@ func main() {
     fmt.Printf("hloaaaaaaaaa")
     app := fiber.New()
 
+    app.Get("/", func(c *fiber.Ctx) error {
+        return c.SendStatus(200)
+    })
+
     app.Post("/add-voto", func(c *fiber.Ctx) error {
         voto := new(Voto)
 
@@ -60,6 +64,5 @@ func main() {
         return c.SendStatus(200)
     })
 
-    fmt.Printf("Servidor escuchando en el puerto 4100...")
     app.Listen(":4100")
 }

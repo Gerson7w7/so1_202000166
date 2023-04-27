@@ -15,7 +15,7 @@ const Stats = () => {
   const [graph2, setGraph2] = useState([]);
   const [graph3, setGraph3] = useState([]);
   const [graph4, setGraph4] = useState([]);
-  const ip = "api-svc";
+  const ip = "104.154.202.112";
 
   useEffect(() => {
     // valores por defecto

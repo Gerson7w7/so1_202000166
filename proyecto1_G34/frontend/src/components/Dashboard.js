@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const Dashboard = () => {
   const [fecha, setFecha] = useState(null); // fecha en tiempo real
-  const ip = 'api-svc' 
+  const ip = '104.154.202.112' 
 
   useEffect(() => {
     const url = `http://${ip}:5000/get-fecha`;
