@@ -3,7 +3,7 @@
 Al acceder a la aplicación web se muestra un dashboard de información en tiempo real.
 Este contiene datos relevantes respecto al conteo de votos para llevar un control de cómo las elecciones cambian en cada instante.
 
-![This is an image](./images/dashboard.jpg)
+<img src="images/dashboard.jpg" width="450"/>
 
 <br><br>
 La primer información que muestra el dashboard es:
@@ -13,7 +13,7 @@ La primer información que muestra el dashboard es:
 
 Esta información se obteien tal como se muestra a continuación:
 
-![This is an image](./images/dashboard2.jpg)
+<img src="images/dashboard2.jpg" width="450"/>
 
 <br><br>
 
@@ -23,10 +23,10 @@ Luego se muestra
 
 Estos elementos se ven de la siguiente forma:
 
-![This is an image](./images/dashboard3.jpg)
+<img src="images/dashboard3.jpg" width="450"/>
 
 <br><br>
 
 Para finalizar el dashboard, se muestra una tabla con todos los votos almacenados en la base de datos MYSQL. Estos datos corresponden a todos los votos que han sido realizados.
 
-![This is an image](./images/dashboard4.jpg)
+<img src="images/dashboard4.jpg" width="450"/>
