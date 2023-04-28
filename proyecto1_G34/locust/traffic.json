@@ -1,83 +1,461 @@
 [
     {
-        "sede": 1,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
         "papeleta": "Verde",
-        "partido": "VALOR"
+        "partido": "UNE"
+    },
+    {
+        "sede": 15,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "UNE"
     },
     {
         "sede": 2,
         "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 3,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
-        "papeleta": "Verde",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
         "partido": "UNIONISTA"
     },
     {
-        "sede": 4,
+        "sede": 17,
         "departamento": "San Marcos",
         "municipio": "Malacatán",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 20,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 20,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
         "papeleta": "Verde",
         "partido": "UNE"
     },
     {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
         "sede": 5,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 9,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 11,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 15,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 11,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
         "papeleta": "Verde",
         "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 5,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 10,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "UNE"
     },
     {
         "sede": 6,
         "departamento": "El Quiché",
         "municipio": "Zacualpa",
         "papeleta": "Rosada",
-        "partido": "VALOR"
+        "partido": "UNE"
     },
     {
-        "sede": 7,
-        "departamento": "El Quiché",
-        "municipio": "Sacapulas",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 8,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
+        "sede": 4,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
         "papeleta": "Verde",
         "partido": "VAMOS"
     },
     {
         "sede": 9,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
         "partido": "VALOR"
     },
     {
-        "sede": 10,
+        "sede": 14,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 20,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 2,
         "departamento": "Guatemala",
         "municipio": "Villa Canales",
         "papeleta": "Rosada",
         "partido": "VAMOS"
     },
     {
-        "sede": 11,
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 2,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 10,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 7,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 13,
         "departamento": "Guatemala",
         "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 15,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 3,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 16,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 3,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 7,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 15,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 15,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 4,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 13,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 16,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 4,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 2,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
         "papeleta": "Blanca",
         "partido": "FCN"
     },
     {
         "sede": 12,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 4,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 13,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 6,
         "departamento": "San Marcos",
         "municipio": "Malacatán",
         "papeleta": "Verde",
@@ -85,24 +463,1557 @@
     },
     {
         "sede": 13,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
         "papeleta": "Verde",
         "partido": "UNIONISTA"
     },
     {
-        "sede": 14,
+        "sede": 7,
         "departamento": "El Quiché",
         "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 17,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
         "papeleta": "Verde",
         "partido": "FCN"
     },
     {
         "sede": 15,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 5,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 12,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 7,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 2,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 12,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 4,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 2,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 9,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 3,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 3,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 7,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 11,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 1,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 14,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
         "departamento": "Izabal",
         "municipio": "Livingston",
         "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 8,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 7,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 10,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 20,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 1,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 19,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
         "partido": "UNIONISTA"
+    },
+    {
+        "sede": 2,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 10,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 20,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 16,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 8,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 20,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 17,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 9,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 11,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 19,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 17,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 10,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 13,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 3,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 10,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 4,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 10,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 10,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 13,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 7,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 5,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 20,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 10,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 6,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 13,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 5,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 17,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 10,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 6,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 16,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 12,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 15,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 20,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 5,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 2,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 3,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 9,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 11,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 2,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 15,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 15,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 13,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 3,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 19,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 13,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 5,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 2,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 6,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 8,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 16,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 12,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 13,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 3,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 9,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 6,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 20,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 1,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 13,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 13,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 7,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 4,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 13,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 8,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 11,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 2,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 4,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 4,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 10,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 14,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 19,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 14,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 3,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 2,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 14,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 15,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 6,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "UNE"
     },
     {
         "sede": 16,
@@ -114,1289 +2025,1478 @@
     {
         "sede": 17,
         "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Rosada",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
         "partido": "VAMOS"
     },
     {
         "sede": 18,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 11,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 10,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 5,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 2,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
         "papeleta": "Verde",
         "partido": "FCN"
     },
     {
-        "sede": 19,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
+        "sede": 15,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 14,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 10,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 1,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 2,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
         "papeleta": "Verde",
         "partido": "VALOR"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 19,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 4,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 13,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 13,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 1,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 10,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 9,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 3,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 5,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 4,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
     },
     {
         "sede": 20,
         "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 21,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 22,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 23,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 24,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 25,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 26,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 27,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 28,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 29,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 30,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 31,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 32,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 33,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 34,
-        "departamento": "El Quiché",
-        "municipio": "Sacapulas",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 35,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 36,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 37,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 38,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 39,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 40,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 41,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 42,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 43,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 44,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 45,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 46,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 47,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 48,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 49,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 50,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 51,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 52,
-        "departamento": "El Quiché",
-        "municipio": "Sacapulas",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 53,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 54,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 55,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 56,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 57,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 58,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 59,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 60,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 61,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 62,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 63,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 64,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 65,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 66,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 67,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 68,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 69,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 70,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 71,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 72,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 73,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 74,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 75,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 76,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 77,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 78,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 79,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 80,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 81,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 82,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 83,
-        "departamento": "San Marcos",
         "municipio": "El Tumbador",
         "papeleta": "Rosada",
-        "partido": "FCN"
+        "partido": "UNIONISTA"
     },
     {
-        "sede": 84,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 85,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 86,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 87,
+        "sede": 2,
         "departamento": "El Quiché",
         "municipio": "Zacualpa",
         "papeleta": "Verde",
         "partido": "UNIONISTA"
     },
     {
-        "sede": 88,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 89,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 90,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 91,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 92,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 93,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 94,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 95,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 96,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 97,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 98,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 99,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 100,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 101,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 102,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 103,
+        "sede": 16,
         "departamento": "El Quiché",
         "municipio": "Sacapulas",
         "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 104,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 105,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 106,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 107,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 108,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 109,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 110,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 111,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 112,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 113,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 114,
-        "departamento": "El Quiché",
-        "municipio": "Sacapulas",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 115,
-        "departamento": "Izabal",
-        "municipio": "Puerto Barrios",
-        "papeleta": "Rosada",
         "partido": "VALOR"
     },
     {
-        "sede": 116,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 117,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 118,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 119,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 120,
-        "departamento": "El Quiché",
-        "municipio": "Sacapulas",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 121,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 122,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 123,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 124,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 125,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 126,
+        "sede": 14,
         "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 127,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
+        "municipio": "Puerto Barrios",
         "papeleta": "Blanca",
         "partido": "FCN"
     },
     {
-        "sede": 128,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 129,
-        "departamento": "Guatemala",
-        "municipio": "Guatemala",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 130,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 131,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 132,
-        "departamento": "Izabal",
-        "municipio": "Livingston",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 133,
+        "sede": 12,
         "departamento": "El Quiché",
         "municipio": "Sacapulas",
         "papeleta": "Rosada",
         "partido": "UNE"
     },
     {
-        "sede": 134,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Verde",
-        "partido": "VALOR"
+        "sede": 20,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
     },
     {
-        "sede": 135,
+        "sede": 11,
         "departamento": "El Quiché",
         "municipio": "Zacualpa",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 136,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
         "papeleta": "Rosada",
-        "partido": "VALOR"
+        "partido": "UNIONISTA"
     },
     {
-        "sede": 137,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 138,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 139,
+        "sede": 19,
         "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 140,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 141,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Rosada",
-        "partido": "FCN"
-    },
-    {
-        "sede": 142,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 143,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
+        "municipio": "Sacapulas",
         "papeleta": "Blanca",
         "partido": "FCN"
     },
     {
-        "sede": 144,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 145,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 146,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 147,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 148,
+        "sede": 14,
         "departamento": "El Quiché",
         "municipio": "Sacapulas",
         "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 149,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Blanca",
         "partido": "UNIONISTA"
     },
     {
-        "sede": 150,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 151,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 152,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 153,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 154,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 155,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 156,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 157,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 158,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 159,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 160,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 161,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Blanca",
-        "partido": "UNE"
-    },
-    {
-        "sede": 162,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 163,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 164,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Verde",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 165,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 166,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 167,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 168,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 169,
-        "departamento": "El Quiché",
-        "municipio": "Zacualpa",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 170,
-        "departamento": "El Quiché",
-        "municipio": "Sacapulas",
-        "papeleta": "Verde",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 171,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 172,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 173,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 174,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 175,
-        "departamento": "Alta Verapaz",
-        "municipio": "Tamahú",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 176,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 177,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 178,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Blanca",
-        "partido": "FCN"
-    },
-    {
-        "sede": 179,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 180,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 181,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 182,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 183,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 184,
-        "departamento": "Guatemala",
-        "municipio": "Mixco",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 185,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Blanca",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 186,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
-    },
-    {
-        "sede": 187,
-        "departamento": "San Marcos",
-        "municipio": "El Tumbador",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 188,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Blanca",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 189,
-        "departamento": "Alta Verapaz",
-        "municipio": "Cobán",
-        "papeleta": "Verde",
-        "partido": "VAMOS"
-    },
-    {
-        "sede": 190,
-        "departamento": "Izabal",
-        "municipio": "Morales",
-        "papeleta": "Rosada",
-        "partido": "UNE"
-    },
-    {
-        "sede": 191,
+        "sede": 1,
         "departamento": "Izabal",
         "municipio": "Puerto Barrios",
-        "papeleta": "Verde",
-        "partido": "UNE"
-    },
-    {
-        "sede": 192,
-        "departamento": "El Quiché",
-        "municipio": "Cunén",
-        "papeleta": "Verde",
-        "partido": "FCN"
-    },
-    {
-        "sede": 193,
-        "departamento": "Guatemala",
-        "municipio": "Villa Canales",
-        "papeleta": "Verde",
+        "papeleta": "Blanca",
         "partido": "VALOR"
     },
     {
-        "sede": 194,
-        "departamento": "San Marcos",
-        "municipio": "San Marcos",
-        "papeleta": "Rosada",
-        "partido": "UNIONISTA"
-    },
-    {
-        "sede": 195,
-        "departamento": "Alta Verapaz",
-        "municipio": "Panzos",
-        "papeleta": "Rosada",
+        "sede": 12,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
         "partido": "VAMOS"
     },
     {
-        "sede": 196,
+        "sede": 20,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 10,
         "departamento": "Izabal",
         "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 7,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
         "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
         "partido": "UNIONISTA"
     },
     {
-        "sede": 197,
+        "sede": 13,
         "departamento": "Guatemala",
         "municipio": "Guatemala",
         "papeleta": "Blanca",
         "partido": "FCN"
     },
     {
-        "sede": 198,
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 12,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 12,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 13,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 18,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 20,
         "departamento": "Izabal",
         "municipio": "Livingston",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
+        "papeleta": "Blanca",
+        "partido": "UNE"
     },
     {
-        "sede": 199,
-        "departamento": "San Marcos",
-        "municipio": "Malacatán",
-        "papeleta": "Rosada",
-        "partido": "VALOR"
+        "sede": 13,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
     },
     {
-        "sede": 200,
+        "sede": 19,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 8,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 17,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 13,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
         "departamento": "Izabal",
         "municipio": "Puerto Barrios",
         "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 7,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 9,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 10,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 8,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 7,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 13,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Rosada",
         "partido": "FCN"
+    },
+    {
+        "sede": 4,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 10,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 20,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 11,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 6,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 13,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 8,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 18,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 5,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 5,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 7,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 4,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 2,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 7,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 20,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 19,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 17,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 3,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 14,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 14,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 20,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 4,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 17,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Verde",
+        "partido": "UNE"
+    },
+    {
+        "sede": 9,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 17,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 11,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 4,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 9,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 5,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 20,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 16,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 12,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 20,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 8,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 10,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 2,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 16,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 4,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 16,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 12,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Nueva",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 15,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 18,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 11,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 18,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 7,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "FCN"
+    },
+    {
+        "sede": 4,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 11,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 7,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 6,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Rosada",
+        "partido": "UNE"
+    },
+    {
+        "sede": 10,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 6,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 2,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 14,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 3,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 5,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 1,
+        "departamento": "Zacapa",
+        "municipio": "Teculután",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 2,
+        "departamento": "El Quiché",
+        "municipio": "Zacualpa",
+        "papeleta": "Rosada",
+        "partido": "FCN"
+    },
+    {
+        "sede": 1,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 1,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 18,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 4,
+        "departamento": "Guatemala",
+        "municipio": "Guatemala",
+        "papeleta": "Blanca",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 15,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "San Marcos",
+        "municipio": "El Tumbador",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "San Marcos",
+        "papeleta": "Verde",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 16,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 15,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 2,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 11,
+        "departamento": "El Quiché",
+        "municipio": "Sacapulas",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 5,
+        "departamento": "Izabal",
+        "municipio": "Livingston",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 1,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 19,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Rosada",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 4,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 2,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Rosada",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 6,
+        "departamento": "Zacapa",
+        "municipio": "Zacapa",
+        "papeleta": "Verde",
+        "partido": "FCN"
+    },
+    {
+        "sede": 9,
+        "departamento": "San Marcos",
+        "municipio": "Malacatán",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 8,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VAMOS"
+    },
+    {
+        "sede": 13,
+        "departamento": "El Quiché",
+        "municipio": "Cunén",
+        "papeleta": "Verde",
+        "partido": "UNIONISTA"
+    },
+    {
+        "sede": 17,
+        "departamento": "Zacapa",
+        "municipio": "Río Hondo",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 12,
+        "departamento": "Izabal",
+        "municipio": "Morales",
+        "papeleta": "Blanca",
+        "partido": "UNE"
+    },
+    {
+        "sede": 13,
+        "departamento": "Izabal",
+        "municipio": "Puerto Barrios",
+        "papeleta": "Verde",
+        "partido": "VALOR"
+    },
+    {
+        "sede": 5,
+        "departamento": "Guatemala",
+        "municipio": "Villa Canales",
+        "papeleta": "Blanca",
+        "partido": "VALOR"
     }
 ]
