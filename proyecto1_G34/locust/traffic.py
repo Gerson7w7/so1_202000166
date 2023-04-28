@@ -35,9 +35,8 @@ class CargaTrafico(HttpUser):
     def sendData(self):
         data = self.reader.getData()
         if data is not None:
-            #Pendiente ruta definitiva
             res = self.client.post("/add-voto", json=data)
-            print(res.json())
+            print(res)
         else:
             print("Empty")
             self.stop(True)
