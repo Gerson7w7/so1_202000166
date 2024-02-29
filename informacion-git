@@ -1,7 +1,1 @@
-personal token: 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
 
-para clonar: git clone https://<TOKEN>:x-oauth-basic@github.com/<MyUser>/<MyRepo>.git
-
-ver ramas: git branch
-
-pull rama main: git pull origin master
